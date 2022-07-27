@@ -2,19 +2,71 @@ Explica los siguentes conceptos con tus propias palabras.
 
 
 1- Scope
+Es el alcance que una variable tendrá en el código.
+El scope decide a qué variables tienes acceso en cada parte del código.
+
+Scope global
+Es una variable que está declarada fuera de una función o de un bloque.
+Se puede acceder a esta variables desde cualquier parte del código,
+ya sea dentro o fuera de una función.
+
+Scope local
+Se puede acceder a la variable únicamente en cierta parte del código.
+Por ejemplo una variable que está declarada dentro de una función o de un bloque,
+solo se puede acceder a la variable dentro de esa función.
 
 2- Tipos de datos
+En JavaScript existen varios tipos de datos, debido a que JavaScript es un lenguaje de tipado dinámico y no está tipado a nivel de dato, esto quiere decir que no hay un tipo de dato fijo, sino que se puede declarar una variable de cualquier tipo de dato.
+Los tipos de datos son:
+    primitivos:
+        number, string, boolean, null, undefined, symbol, bigint
+    estructuras:
+        object, array, function, date, regexp, error, map, set, weakmap, weakset
+    compuestos:
+        promise, generator, generatorfunction, asyncfunction, iterable, iterableiterator, asynciterable, asynciterableiterator, arraybuffer, dataview, dataview, typedarray, typedarrayiterator, mapiterator, setiterator, weakmapiterator, weaksetiterator
+    otros:
+        proxy, reflect, reflectmetadata, asyncgenerator, asyncgeneratorfunction
 
 3- Operadores
+Los operadores son un conjunto de operaciones que se pueden realizar entre dos o más variables.
+Los operadores son:
+    aritméticos:
+        +, -, *, /, %, ++, --
+    asignación:
+        =, +=, -=, *=, /=, %=, <<=, >>=, >>>=, &=, ^=, |=
+    comparación:
+        ==, ===, !=, !==, <, >, <=, >=, instanceof, in
+    lógicos:
+        &&, ||, !
+    operador de bits:
+        &, |, ^, ~, <<, >>, >>>
+    otros:
+        delete, typeof, void
+
 
 4- Coercion
+Es la conversión de un tipo de dato a otro.
+En JavaScript existen dos tipos de coerción:
+    explícita:
+        Number(), String(), Boolean(), Object(), Array(), Function(), Date(), RegExp(), Error(), Map(), Set(), WeakMap(), WeakSet()
+    implícita:
+        +, -, *, /, %, ++, --, <<, >>, >>>, &, ^, |, delete, typeof, void (para los operadores de bits)
 
 5- Precedencia
+La precedencia es una característica que determina el orden de ejecución de una operación.
 
 6- Bind
+El método bind() devuelve una nueva función que es una función de invocación de la función que se le pasa como parámetro.
 
 7- Apply
+El método apply() es similar al método call(), pero se utiliza para invocar una función con una lista de argumentos.
+
 
 8- Promesas
+Las promesas son una forma de representar una operación asincrónica.
+Osea que puede tener un estado de en proceso, resolución o rechazo.
+Las promesas se utilizan para realizar operaciones asincrónicas, como peticiones a servidores o lecturas de archivos.
 
 9- Recursividad
+La recursividad es una función que se llama a sí misma.
+Una función recursiva puede recibir 2 entradas, un caso base (el caso en el que la función no tiene más recursos para ejecutarse) y un caso recursivo (el caso en el que la función sigue ejecutándose).
